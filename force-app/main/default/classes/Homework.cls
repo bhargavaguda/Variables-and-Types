@@ -5,8 +5,8 @@ public with sharing class Homework {
 
 
     // Declare a string that is initialised from an Integer
-    Integer numberOfStudents = 20;
-    String stringValueOfnumberOfStudents = String.valueOf(numberOfStudents);
+    
+    String stringValueOfnumberOfStudents = String.valueOf('20');
 
     public void newYearsEve()
     {
@@ -15,7 +15,7 @@ public with sharing class Homework {
         // 12/31/2021
 
         Time localTime = Time.newInstance(12, 30, 25, 0);
-        // Datetime myNewYearEveDateTime = Date.NewInstance(2021, 12, 31) + Time.newInstance(12, 30, 25, 0);
+        Datetime myNewYearEveDateTime = Datetime.NewInstance(2021, 12, 31, 12, 30, 25);
     }
 
     public void castAccount()
@@ -40,8 +40,8 @@ public with sharing class Homework {
     {
         // Create an ID with the value ‘00D180000001s0LEAQ', convert 
         // this to the 15 character version.
-        String newId = String.valueOf('00D180000001s0LEAQ');
-        Id myId = newId.substring(0, 15);
+        Id eighteenCharId = '00D180000001s0LEAQ';
+        Id fifteenCharId = eighteenCharId.to15();
     }
 
     public void sliceOfPi()
@@ -50,7 +50,7 @@ public with sharing class Homework {
         
         // Use the built-in method to convert it to 2 decimal places.
         Decimal piValue = 3.14159;
-        Decimal piValueTwoDecimaled = piValue.setscale(3);
+        Decimal piValueTwoDecimaled = piValue.setscale(2);
     }
 
     public void whitespace()
@@ -90,7 +90,7 @@ public with sharing class Homework {
         // Create a boolean whose value is initialised from the text
         // ‘true’.
         
-        Boolean myBooleanValue = true;
+        Boolean myBooleanValue = Boolean.valueOf('true');
 
     }
 
@@ -105,18 +105,17 @@ public with sharing class Homework {
     public void findApex(String candidate) 
     {
         // Find the position of the substring “Apex” in candidate
-        String newCandidate = 'Random Apex Guy';
+        //Bhargava is learning Apex programming
         String apex = 'Apex';
-        Integer substringPosition = newCandidate.indexOf(apex);
+        Integer substringPosition = 'Bhargava is learning Apex programming'.indexOf(apex);
 
     }
 
     public void get10And15(String candidate)
     {
         // Extract the 10th and 15th characters from a string
-        String newCandidate = 'MoreThan15Characters';
-        String tenthCharacter = newCandidate.remove('C');
-        String fifteenCharacter = newCandidate.remove('c');
+        String newString = 'MoreThan15Characters';
+        String newSubStringedString = newString.substring(10, 15);
     }
 
     public void monthsBetween(Date startDate)
