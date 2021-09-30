@@ -106,8 +106,9 @@ public with sharing class Homework {
     {
         // Find the position of the substring “Apex” in candidate
         //Bhargava is learning Apex programming
+        candidate = 'Bhargava is learning Apex programming'
         String apex = 'Apex';
-        Integer substringPosition = 'Bhargava is learning Apex programming'.indexOf(apex);
+        Integer substringPosition = candidate.indexOf(apex);
 
     }
 
