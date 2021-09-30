@@ -15,7 +15,7 @@ public with sharing class Homework {
         // 12/31/2021
 
         Time localTime = Time.newInstance(12, 30, 25, 0);
-        Datetime myNewYearEveDateTime = Datetime.NewInstance(2021, 12, 31, 12, 30, 25);
+        Datetime myNewYearEveDateTime = Datetime.NewInstance(2021, 12, 31) + localTime ;
     }
 
     public void castAccount()
