@@ -106,17 +106,17 @@ public with sharing class Homework {
     {
         // Find the position of the substring “Apex” in candidate
         //Bhargava is learning Apex programming
-        candidate = 'Bhargava is learning Apex programming'
-        String apex = 'Apex';
-        Integer substringPosition = candidate.indexOf(apex);
+        
+        Integer substringPosition = candidate.indexOf('Apex');
 
     }
 
     public void get10And15(String candidate)
     {
         // Extract the 10th and 15th characters from a string
-        String newString = 'MoreThan15Characters';
-        String newSubStringedString = newString.substring(10, 15);
+        
+        String substringAtChar10 = candidate.substring(9, 10);
+        String substringAtChar15 = candidate.substring(14, 15);
     }
 
     public void monthsBetween(Date startDate)
